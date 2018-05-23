@@ -1,0 +1,70 @@
+
+ html {
+    height: 100%;
+    background-image: url("background-2.png");
+    background-size: cover;
+    background-repeat:repeat;
+    background-position: center;
+}
+
+body {
+  font-family: 'Noticia Text', serif;
+  text-align: center;
+}
+
+.profile {
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resume {
+  padding: 20px 20px;
+  border: 1px solid #E3C2C4;
+  border-radius: 15px;
+  height: 100%;
+  box-shadow: 0 10px 6px -6px #C0C0C0;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.name {
+  text-align: center;
+  font-family: 'Cinzel';
+  font-size: 30px;
+  border-bottom: 5px solid #FB9FA4;
+}
+
+a:active, a:visited, a:hover {
+  color: #FB9FA4;
+  text-decoration-color: #FB9FA4;
+}
+
+
+
+h2 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+}
+
+h2:hover {
+  color: #FB9FA4
+}
+
+.about-me, .experience, .projects {
+  text-decoration: underline;
+  text-decoration-color: #FB9FA4;
+}
+
+.about-me-bio {
+  text-align: center;
+  font-family: 'Noticia Text', serif;
+}
+
+#experienceToggle, #projectsToggle {
+  display: none;
+}

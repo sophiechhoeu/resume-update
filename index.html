@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sophie Chhoeu</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond|Noticia+Text" rel="stylesheet">
+</head>
+<body>
+  <div class="flex-container">
+    <div class="resume">
+      <h1 class="name">Sophie Chhoeu</h1>
+      <img class="profile" src="Sophie.jpg" alt="profile pic">
+
+      <h2 class="about-me">About me</h2>
+      <hr></hr>
+      <div class="about-me-bio">
+      <p>Previous experience: Digital Marketing and Sales support</p>
+      <p>Current favourite technology: React</p>
+      <p>Greatest Motivation: The immense satisfaction gained from problem resolution</p>
+      <p>Greatest assets: Trouble shooting, process improvement and building relationships amongst technical and non technical teams.</p>
+      </div>
+
+      <hr></hr>
+      <h2 class="experience" onclick="experience()">Experience</h2>
+        <div id="experienceToggle">
+        <p><strong>CarsGuide Developer Intern</strong></p>
+        <p>February 2018 - March 2018</p>
+        <p>Rebranding of Carsguide and Autotrader website</p>
+        <p>Front end and backend html and css changes</p>
+        <p>Magento and Drupal CMS exposure</p>
+    </div>
+      <h2 class="projects" onclick="projects()">Projects</h2>
+      <div id="projectsToggle">
+      <p><strong>Article Search API</strong></p>
+      <p><a href="https://article-search-app.herokuapp.com/" target="_blank">Link</a></p>
+      <p>A search tool that makes a request to the New York Times api and returns the most relevant article and image</p>
+      <p>Built with: React</p>
+      <hr></hr>
+      <p><strong>LyricFinder</strong></p>
+      <p><a href="https://sophieslyricfinder.herokuapp.com/" target="_blank">Link</a></p>
+      <p>A search tool that requests a song artist and song title and returns the lyrics to that song</p>
+      <p>Built with: React</p>
+      <hr></hr>
+      <p><strong>Business Website</strong></p>
+      <p><a href="https://baker-girl.netlify.com/" target="_blank">Link</a></p>
+      <p>A business website for Baker-girl with a build your own cake form</p>
+      <p>Final team project at CoderAcademy</p>
+      <p>Built with: NodeJS, Express and React, includes admin authentication (JWT)</p>
+      <hr></hr>
+      <p><strong>Sophstagram</strong></p>
+      <p><a href="https://sophstagram.herokuapp.com/" target="_blank">Link</a></p>
+      <p>Recreation of instagram with image upload and user authentication</p>
+      <p>Built with Ruby on rails and bootstrap</p>
+      <hr></hr>
+    </div>
+    </div>
+
+  </div>
+<script>
+  function experience() {
+    var connectButton = document.getElementById("experienceToggle");
+    if (connectButton.style.display === "none") {
+        connectButton.style.display = "block";
+    } else {
+        connectButton.style.display = "none";
+    }
+  }
+
+  function projects() {
+    var connectButton = document.getElementById("projectsToggle");
+    if (connectButton.style.display === "none") {
+        connectButton.style.display = "block";
+    } else {
+        connectButton.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>
